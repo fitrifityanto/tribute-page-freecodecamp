@@ -1,0 +1,115 @@
+:root {
+    --clr-primary:#EEEBDD;
+    --clr-secondary:#D8B6A4;
+    --fcolor:#000000;
+    --fcolor-accent:#630000;
+
+    --ffamily:'Spectral', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ffamily);
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 40em) {
+    body {
+        font-size: 1rem;
+    }
+  }
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#main {
+    background-color: var(--clr-primary);
+    width: min(96%, 70em);
+    margin-inline: auto;
+    padding-bottom: 3rem;
+}
+
+.main-wrap {
+    background-color: var(--clr-secondary);
+    padding-bottom: 1rem;
+}
+#title {
+    text-align: center;
+    margin-bottom: 1rem;
+   
+}
+#title > h1 {
+    max-width: 34em;
+}
+
+#img-div {
+    width: 96%;
+    text-align: center;
+    background-color: var(--clr-primary);
+    padding-bottom: 1rem;
+    margin-inline: auto;
+    box-shadow: 5px 5px 5px rgb(89, 87, 87, .3) ;
+}
+
+#image {
+    display: block;
+    max-inline-size: 100%;
+    object-fit: cover;
+}
+#img-caption {
+    padding:0 1rem;
+    color: var(--fcolor-accent);
+}
+
+#tribute-info > h2 {
+    margin-bottom: 1rem;
+}
+
+.quote,
+#tribute-info > div {
+    width: min(70%, 40em);
+    margin-inline: auto;
+}
+
+#tribute-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tribute-info li {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.quote {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.tribute-linked {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+    width:min(80%,80em);
+    margin-inline: auto;
+}
+
+.tribute-linked a,
+#tribute-link,
+.tribute-linked a:visited,
+#tribute-link:visited
+{
+    color: var(--fcolor-accent);
+}
